@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using CameraCounter.Data;
+using Microsoft.AspNetCore.Cors;
 
 namespace CameraCounter
 {
@@ -32,6 +33,8 @@ namespace CameraCounter
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+            services.AddCors();
+
             services.AddDbContext<ApplicationDbContext>(options =>
                     options.UseSqlite("Data Source=.\\wwwroot\\sql.db"));
 
@@ -50,11 +53,17 @@ namespace CameraCounter
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
-
+            app.UseCors(builder =>
+                builder
+                  .WithOrigins("http://localhost:3000")
+                  .AllowAnyHeader()
+                  .AllowAnyMethod()
+                  .AllowCredentials()
+              );
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
+            
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
