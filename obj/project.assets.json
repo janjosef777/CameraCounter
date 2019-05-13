@@ -12872,23 +12872,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jan Miranda\\.nuget\\packages\\": {},
+    "C:\\Users\\janjo\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jan Miranda\\source\\repos\\CameraCounter\\CameraCounter\\CameraCounter.csproj",
+      "projectUniqueName": "C:\\Users\\janjo\\Desktop\\CameraCounterBack\\CameraCounter\\CameraCounter.csproj",
       "projectName": "CameraCounter",
-      "projectPath": "C:\\Users\\Jan Miranda\\source\\repos\\CameraCounter\\CameraCounter\\CameraCounter.csproj",
-      "packagesPath": "C:\\Users\\Jan Miranda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jan Miranda\\source\\repos\\CameraCounter\\CameraCounter\\obj\\",
+      "projectPath": "C:\\Users\\janjo\\Desktop\\CameraCounterBack\\CameraCounter\\CameraCounter.csproj",
+      "packagesPath": "C:\\Users\\janjo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\janjo\\Desktop\\CameraCounterBack\\CameraCounter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jan Miranda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\janjo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
