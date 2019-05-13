@@ -1,0 +1,42 @@
+﻿@model CameraCounter.Models.Issue
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Issue</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Severity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Severity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Details)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Details)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateDone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateDone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Line)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Line.ID)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
